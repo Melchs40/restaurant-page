@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "The goal of this project is to familiarize me with modules and using them with webpack to create a webpage that is dynamically rendered. I hope to create a functional website that allows the user to move from page to page while behind the scenes the page is moving from module to module using webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Melchs40/restaurant-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Melchs40/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Melchs40/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
