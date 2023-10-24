@@ -1,1 +1,1 @@
-alert("Hi there");
+(()=>{"use strict";!function(){const e=document.createElement("h1");e.innerHTML="Welcome to The Lizard Lounge",document.getElementById("content").appendChild(e),console.log("test success")}()})();
