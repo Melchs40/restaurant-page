@@ -1,4 +1,5 @@
 import createPage from "./main-page";
+import './style.css';
 
 
 // function component() {
