@@ -13,7 +13,11 @@ export default function mainPage() {
    
 
     const mainText = document.createElement("div");
-    mainText.classList.add("main-text");
-    mainText.innerHTML = "The Lizard Lounge is Oshkosh's premier craft beer and microbrew bar. We have a variety of beers from Wisconsin, the United States, and the world. Come check us out; you won't be disappointed."
+    mainText.setAttribute("id", "main-text");
     document.getElementById("content").appendChild(mainText);
+
+    const beer1 = document.createElement("div");
+    beer1.classList.add("beer-text");
+    beer1.innerHTML = "Test 1"
+    document.getElementById("main-text").appendChild(beer1);
 }
