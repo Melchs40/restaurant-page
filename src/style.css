@@ -157,4 +157,25 @@ footer {
 .beer-price {
   display: flex;
   justify-content: end;
+}
+
+#events-page-text {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 150px, 1fr, 150px, 1fr, 150px, 1fr;
+}
+
+.events-date {
+  display: flex;
+  justify-self: center;
+  align-self: flex-end;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.events {
+  justify-self: center;
+  align-self: start;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
