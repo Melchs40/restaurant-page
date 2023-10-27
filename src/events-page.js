@@ -2,13 +2,13 @@ import './style.css';
 import { createButtons, createFooter } from '.';
 import Lizard from "./lizard.png";
 
-export default function mainPage() {
+export default function eventsPage() {
 
     createButtons();
 
     const header = document.createElement("h1");
     header.classList.add("header");
-    header.innerHTML = "Let's get in touch";
+    header.innerHTML = "What's going on?";
     document.getElementById("content").appendChild(header);
 
     const lizard = new Image();

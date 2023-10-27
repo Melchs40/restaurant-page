@@ -1,5 +1,6 @@
 import mainPage from "./main-page";
 import beerPage from "./beer-page";
+import eventsPage from "./events-page";
 import contactPage from "./contact-page"
 import './style.css';
 
@@ -18,13 +19,24 @@ mainButton.onclick = () => {
     
 const beerButton = document.createElement("button"); 
 beerButton.classList.add("button");
-beerButton.innerHTML = "Beer List";
+beerButton.innerHTML = "Beer";
 beerButton.onclick = () => {
     const content = document.getElementById("content");
     while (content.firstChild) {
         content.removeChild(content.lastChild);
     }
     beerPage();
+}
+
+const eventsButton = document.createElement("button"); 
+eventsButton.classList.add("button");
+eventsButton.innerHTML = "Events";
+eventsButton.onclick = () => {
+    const content = document.getElementById("content");
+    while (content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
+    eventsPage();
 }
 
 const contactButton = document.createElement("button");
@@ -44,6 +56,7 @@ buttonDiv.setAttribute("id", "button-group");
 document.getElementById("content").appendChild(buttonDiv);
 buttonDiv.appendChild(mainButton)
 buttonDiv.appendChild(beerButton);
+buttonDiv.appendChild(eventsButton);
 buttonDiv.appendChild(contactButton);
 
 }

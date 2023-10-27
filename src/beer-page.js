@@ -1,5 +1,6 @@
 import './style.css';
 import { createButtons, createFooter } from '.';
+import Lizard from "./lizard.png";
 
 export default function beerPage() {
 
@@ -7,8 +8,13 @@ export default function beerPage() {
 
     const header = document.createElement("h1");
     header.classList.add("header");
-    header.innerHTML = "The Lizard Lounge";
+    header.innerHTML = "Beers of the Month";
     document.getElementById("content").appendChild(header);
+
+    const lizard = new Image();
+    lizard.setAttribute("id", "lizard");
+    lizard.src = Lizard;
+    document.querySelector(".header").append(lizard);
 
     const mainText = document.createElement("div");
     mainText.classList.add("text-container");
