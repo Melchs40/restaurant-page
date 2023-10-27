@@ -6,7 +6,8 @@ import './style.css';
 export function createButtons() {
 
 const mainButton = document.createElement("button"); 
-mainButton.innerHTML = "Check out our main page!";
+mainButton.classList.add("button");
+mainButton.innerHTML = "Home";
 mainButton.onclick = () => {
     const content = document.getElementById("content");
     while (content.firstChild) {
@@ -16,7 +17,8 @@ mainButton.onclick = () => {
 }
     
 const beerButton = document.createElement("button"); 
-beerButton.innerHTML = "Check out our beers!";
+beerButton.classList.add("button");
+beerButton.innerHTML = "Beer List";
 beerButton.onclick = () => {
     const content = document.getElementById("content");
     while (content.firstChild) {
@@ -26,7 +28,8 @@ beerButton.onclick = () => {
 }
 
 const contactButton = document.createElement("button");
-contactButton.innerHTML = "Feel free to contact us!";
+contactButton.classList.add("button");
+contactButton.innerHTML = "Contact Us";
 contactButton.onclick = () => {
     const content = document.getElementById("content");
     while (content.firstChild) {
@@ -34,15 +37,22 @@ contactButton.onclick = () => {
     }
     contactPage();
 }
-
     
 
 let buttonDiv = document.createElement("div");
+buttonDiv.setAttribute("id", "button-group");
 document.getElementById("content").appendChild(buttonDiv);
 buttonDiv.appendChild(mainButton)
 buttonDiv.appendChild(beerButton);
 buttonDiv.appendChild(contactButton);
 
 }
+
+export function createFooter() {
+    const footer = document.createElement("footer");
+    footer.innerHTML = "Copyright © Melchs40's Computer Whiz Coding 2023";
+    document.getElementById("content").appendChild(footer);
+}
+
 
 mainPage();

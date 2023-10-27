@@ -1,5 +1,5 @@
 import './style.css';
-import { createButtons } from '.';
+import { createButtons, createFooter } from '.';
 
 export default function mainPage() {
 
@@ -13,11 +13,18 @@ export default function mainPage() {
    
 
     const mainText = document.createElement("div");
-    mainText.setAttribute("id", "main-text");
+    mainText.classList.add("text-container");
+
+    const newText = document.createElement("div");
+    newText.setAttribute("id", "main-page-text");
+
     document.getElementById("content").appendChild(mainText);
+    document.querySelector(".text-container").appendChild(newText);
 
     const beer1 = document.createElement("div");
     beer1.classList.add("beer-text");
     beer1.innerHTML = "Test 1"
-    document.getElementById("main-text").appendChild(beer1);
+    document.querySelector(".text-container").appendChild(beer1);
+
+    createFooter();
 }

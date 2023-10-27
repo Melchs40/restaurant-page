@@ -1,19 +1,52 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  min-width: 920px;
+}
+
+#button-group {
+  padding-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  background: none;
+  color: white;
+  font-size: 20px;
+}
+
 .header {
-  font-size: 64px;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.75);
-  width: 110%;
+  font-size: 96px;
+  position: absolute;
+  color: black;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 2px;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  white-space: nowrap;
 }
 
 #content {
   position: relative;
   height: 100vh;
-  width: 100%;
+  width: 90%;
+  left: 5%;
+  right: 5%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  color: white;
+  font-size: 18px;
 }
 
 #content::before {
@@ -21,23 +54,55 @@
   background: url(./bar-image.jpeg);
   background-size: cover;
   position: absolute;
-  top: 30px;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
+  top: 40px;
+  right: 0px;
+  bottom: 40px;
+  left: 0px;
   opacity: 0.45;
 }
 
-#main-text {
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  color: white;
+  background-color: black;
+  opacity: 1;
+  flex: 0 0 auto;
+}
+
+.text-container {
+  top: 80px;
+  position: relative;
+  height: 60%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+#main-page-text {
+  display: flex;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.beer-page-text {
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  padding: 10px;
+  white-space: nowrap;
 }
 
 .beer-price, .beer-text {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid black;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .beer-price {

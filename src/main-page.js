@@ -1,5 +1,5 @@
 import './style.css';
-import { createButtons } from '.';
+import { createButtons, createFooter } from '.';
 
 export default function mainPage() {
 
@@ -13,7 +13,15 @@ export default function mainPage() {
    
 
     const mainText = document.createElement("div");
-    mainText.classList.add("main-text");
-    mainText.innerHTML = "The Lizard Lounge is Oshkosh's premier craft beer and microbrew bar. We have a variety of beers from Wisconsin, the United States, and the world. Come check us out; you won't be disappointed."
+    mainText.classList.add("text-container");
+
+    const newText = document.createElement("div");
+    newText.setAttribute("id", "main-page-text");
+
+    newText.innerHTML = "The Lizard Lounge is Oshkosh's premier craft beer and microbrew bar. We have a variety of beers from Wisconsin, the United States, and the world. Come check us out; you won't be disappointed."
+
     document.getElementById("content").appendChild(mainText);
+    document.querySelector(".text-container").appendChild(newText);
+
+    createFooter();
 }
