@@ -6,6 +6,8 @@ export default function eventsPage() {
 
     createButtons();
 
+    document.title = "Lizard Lounge - Events";
+
     const header = document.createElement("h1");
     header.classList.add("header");
     header.innerHTML = "What's going on?";

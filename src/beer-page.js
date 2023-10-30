@@ -6,6 +6,8 @@ export default function beerPage() {
 
     createButtons();
 
+    document.title = "Lizard Lounge - BEER!";
+    
     const header = document.createElement("h1");
     header.classList.add("header");
     header.innerHTML = "Beers of the Month";
@@ -18,11 +20,10 @@ export default function beerPage() {
 
     const mainText = document.createElement("div");
     mainText.classList.add("text-container");
+    document.getElementById("content").appendChild(mainText);
 
     const newText = document.createElement("div");
     newText.classList.add("beer-page-text");
-
-    document.getElementById("content").appendChild(mainText);
     document.querySelector(".text-container").appendChild(newText);
 
     const beer1 = document.createElement("div");
