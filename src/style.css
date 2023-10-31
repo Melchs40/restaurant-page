@@ -65,7 +65,7 @@ html, body {
 }
 
 #content::before {
-  min-height: 620px;
+  height: 90%;
   content: "";
   background: url(./bar-image.jpeg);
   background-size: cover;
@@ -90,14 +90,15 @@ footer {
 }
 
 .text-container {
-  top: -40px;
-  bottom: -40px;
   position: relative;
   height: 300px;
   width: 80%;
   background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid white;
   border-radius: 30px;
+  top: -70px;
+  grid-area: 1/1/3/2;
+  justify-self: center;
 }
 
 .main-text-container {
@@ -106,6 +107,16 @@ footer {
   position: relative;
   display: grid;
   grid-template-columns: 400px 1fr;
+  grid-template-rows: 100px 240px;
+}
+
+.outer-text-container {
+  height: 360px;
+  top: 40px;
+  bottom: -40px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 100px 240px;
 }
 
@@ -186,17 +197,20 @@ footer {
 }
 
 .events {
+  display: flex;
   justify-self: center;
-  align-self: start;
+  align-self: center;
   padding: 10px;
 }
 
 .contact-text-container {
   position: relative;
   top: -100px;
+  justify-content: flex-end;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 50px 300px;
+  grid-template-rows: 50px 50px 1fr;
+  padding-bottom: -180px;
 }
 
 #phone-number {
@@ -255,6 +269,14 @@ footer {
   height: 20px;
   width: 200px;
   right: 200px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: "Patrick Hand SC", cursive;
 }
 
 #form-email-text {
@@ -275,6 +297,14 @@ footer {
   height: 20px;
   width: 200px;
   right: 200px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: "Patrick Hand SC", cursive;
 }
 
 #form-number-text {
@@ -295,6 +325,14 @@ footer {
   height: 20px;
   width: 200px;
   right: 200px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: "Patrick Hand SC", cursive;
 }
 
 #form-comment-text {
@@ -315,6 +353,14 @@ footer {
   height: 100px;
   width: 200px;
   right: 200px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  font-family: "Patrick Hand SC", cursive;
 }
 
 #submit-button {
@@ -322,4 +368,12 @@ footer {
   align-self: center;
   justify-self: center;
   grid-area: 5/1/6/3;
+  border: 1px solid white;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Patrick Hand SC", cursive;
 }/*# sourceMappingURL=style.css.map */

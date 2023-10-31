@@ -35,7 +35,7 @@ export default function contactPage() {
 
     const formTitle = document.createElement("div");
     formTitle.setAttribute("id", "form-title");
-    formTitle.innerHTML = "  Contact Us Form  ";
+    formTitle.innerHTML = "Contact Us Form";
     document.querySelector(".contact-text-container").appendChild(formTitle);
 
     const myForm = document.createElement("form");

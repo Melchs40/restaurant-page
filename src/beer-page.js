@@ -18,13 +18,17 @@ export default function beerPage() {
     lizard.src = Lizard;
     document.querySelector(".header").append(lizard);
 
-    const mainText = document.createElement("div");
-    mainText.classList.add("text-container");
-    document.getElementById("content").appendChild(mainText);
+    const outerContainer = document.createElement("div");
+    outerContainer.classList.add("outer-text-container");
+    document.getElementById("content").appendChild(outerContainer);
 
-    const newText = document.createElement("div");
-    newText.classList.add("beer-page-text");
-    document.querySelector(".text-container").appendChild(newText);
+    const innerContainer = document.createElement("div");
+    innerContainer.classList.add("text-container");
+    document.querySelector(".outer-text-container").appendChild(innerContainer);
+
+    const beerText = document.createElement("div");
+    beerText.classList.add("beer-page-text");
+    document.querySelector(".text-container").appendChild(beerText);
 
     const beer1 = document.createElement("div");
     beer1.classList.add("beer-text");

@@ -18,10 +18,13 @@ export default function eventsPage() {
     lizard.src = Lizard;
     document.querySelector(".header").append(lizard);
    
+    const outerContainer = document.createElement("div");
+    outerContainer.classList.add("outer-text-container");
+    document.getElementById("content").appendChild(outerContainer);
 
-    const mainText = document.createElement("div");
-    mainText.classList.add("text-container");
-    document.getElementById("content").appendChild(mainText);
+    const innerContainer = document.createElement("div");
+    innerContainer.classList.add("text-container");
+    document.querySelector(".outer-text-container").appendChild(innerContainer);
 
     const eventText = document.createElement("div");
     eventText.setAttribute("id", "events-page-text");

@@ -28,7 +28,7 @@ export default function mainPage() {
 
     const paraText = document.createElement("div");
     paraText.setAttribute("id", "main-page-text");
-    paraText.innerHTML = "Located in the heart of historic downtown Oshkosh, the Lizard Lounge is one of the oldest and most prestigeous bars in the country. We have over 150 different beers from the great state of Wisconsin, the United States, and the world including 30 on monthly rotating taps. Come check us out; you won't be disappointed! Live music on the main stage every Friday and Saturday night. Open 3:00pm daily.";
+    paraText.innerHTML = "Located in the heart of historic downtown Oshkosh, the Lizard Lounge has long been considered one of the most prestigeous bars in the country. We have over 100 different beers from the great state of Wisconsin, the United States, and across the globe including 30 on our monthly rotating taps. Come check us out; you won't be disappointed! Live music on the main stage every Friday and Saturday night. Open 3:00pm daily.";
     document.querySelector(".main-text-container").appendChild(paraText);
 
     const lizard = new Image();
