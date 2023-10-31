@@ -99,14 +99,10 @@ export default function contactPage() {
     myForm.appendChild(custComment);
 
     const submit = document.createElement("input");
-    submit.setAttribute("type", "submit");
+    submit.setAttribute("type", "button");
     submit.setAttribute("id", "submit-button");
     submit.setAttribute("value", "Submit");
     myForm.appendChild(submit);
-
-    submit.addEventListener("click", function(){
-        document.getElementById("my-form").className="submitted";
-    });
 
     createFooter();
 }
