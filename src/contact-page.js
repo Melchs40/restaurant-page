@@ -40,7 +40,7 @@ export default function contactPage() {
 
     const myForm = document.createElement("form");
     myForm.setAttribute("method", "post");
-    myForm.setAttribute("action", "submit.php");
+    myForm.setAttribute("action", "#");
     myForm.setAttribute("id", "my-form");
     document.querySelector(".contact-text-container").appendChild(myForm);
 
@@ -103,6 +103,10 @@ export default function contactPage() {
     submit.setAttribute("id", "submit-button");
     submit.setAttribute("value", "Submit");
     myForm.appendChild(submit);
+
+    submit.addEventListener("click", function(){
+        document.getElementById("my-form").className="submitted";
+    });
 
     createFooter();
 }
